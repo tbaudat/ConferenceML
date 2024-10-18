@@ -8,6 +8,8 @@
     <li>
       <a href="#about-the-project">About The Project</a>
     </li>
+    <li><a href="#Jeu de données">Jeu de données</a></li>
+    <li><a href="#Organisation du dépot">Organisation du dépot</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -24,6 +26,23 @@ Le jeu de données utilisé est composé d’informations liées à des images n
 Nous avons envisagé quatre approches de machine learning pour cette tâche : le Local Outlier Factor (LOF), le One-Class Support Vector Machine (OCSVM), DBScan et l'Isolation Forest. La méthode DBScan qui utilise la proximité à d’autres points et crée des clusters n’a finalement pas été utilisée car elle est moins performante sur des jeux de données à nombreuses dimensions Ces algorithmes ont été sélectionnés pour leur capacité à identifier des individus présents en quantité minoritaire dans un jeu de données complexes. Le LOF utilise la densité locale pour détecter les anomalies en fonction du voisinage des données, tandis que l’OCSVM projette les données dans un espace de grande dimension pour isoler les points anormaux. Enfin, l’Isolation Forest est un algorithme basé sur des arbres de décision qui identifie les anomalies en fractionnant les données de manière aléatoire et donc en les isolant. 
 
 Les résultats obtenus pourront permettre une détection plus précoce des cancers. Cela pourrait ouvrir la voie à des systèmes de diagnostic automatisés plus fiables et robustes. Cependant, toutes les méthodes envisagées nécessitent des hyperparamètres qui forcent donc une intervention humaine. 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Jeu de données -->
+## Jeu de données
+
+Le jeu de données comporte :
+* 30 features numériques (caractères géométriques des différentes cellules)
+* 1 variable factorielle : Bénigne (0) ou Maligne (1)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Organisation du dépot -->
+## Organisation du dépot
+
+Vous trouverez dans ce dépôt :
+* un script R pour chaque méthode de Machine Learning
+* le jeu de données aux formats CSV
+* le diaporama utilisé pour la conférence
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
